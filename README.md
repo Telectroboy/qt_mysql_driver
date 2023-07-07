@@ -38,12 +38,12 @@ Prerequisites:
 
 ```console
 set PATH=%PATH%;C:\Qt\Tools\CMake_64\bin;C:\Qt\Tools\Ninja
-cd C:\Qt\6.4.0\Src\qtbase\src\plugins\sqldrivers
+cd C:\Qt\6.5.1\Src\qtbase\src\plugins\sqldrivers
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
-call C:\Qt\6.4.0\msvc2019_64\bin\qt-cmake.bat -G "Ninja" . -DMySQL_INCLUDE_DIR="C:\mysql_8.0.29\include" -DMySQL_LIBRARY="C:\mysql_8.0.29\lib\libmysql.lib" -DCMAKE_INSTALL_PREFIX="C:\Qt\6.4.0\msvc2019_64"
+call C:\Qt\6.5.1\msvc2019_64\bin\qt-cmake.bat -G "Ninja" . -DMySQL_INCLUDE_DIR="C:\MySQL\include" -DMySQL_LIBRARY="C:\MySQL\lib\libmysql.lib" -DCMAKE_INSTALL_PREFIX="C:\Qt\6.5.1\msvc2019_64"
 ninja
 ninja install
-call C:\Qt\6.4.0\msvc2019_64\bin\qt-cmake.bat -G "Ninja" . -DMySQL_INCLUDE_DIR="C:\mysql_8.0.29\include" -DMySQL_LIBRARY="C:\mysql_8.0.29\lib\libmysql.lib" -DCMAKE_INSTALL_PREFIX="C:\Qt\6.4.0\msvc2019_64" -DCMAKE_BUILD_TYPE=Release
+call C:\Qt\6.5.1\msvc2019_64\bin\qt-cmake.bat -G "Ninja" . -DMySQL_INCLUDE_DIR="C:\MySQL\include" -DMySQL_LIBRARY="C:\MySQL\lib\libmysql.lib" -DCMAKE_INSTALL_PREFIX="C:\Qt\6.5.1\msvc2019_64" -DCMAKE_BUILD_TYPE=Release
 ninja
 ninja install
 pause
